@@ -49,7 +49,7 @@ public class Studsigin extends HttpServlet {
 			   out.print("data not inserted");
 		   } 
    con.close();
-atm.close();
+stm.close();
 
 		   
 	   }catch(SQLException e) {
