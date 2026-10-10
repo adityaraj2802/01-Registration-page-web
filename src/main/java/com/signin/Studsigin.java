@@ -47,7 +47,10 @@ public class Studsigin extends HttpServlet {
 			   res.sendRedirect("index.html");
 		   }else {
 			   out.print("data not inserted");
-		   }
+		   } 
+   con.close();
+atm.close();
+
 		   
 	   }catch(SQLException e) {
 		   out.print("Your exception "+e);
