@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" id="WebApp_ID" version="5.0">
+<!-- this is for user login -->
+<!--  
+<servlet>
+<servlet-name>userlogin</servlet-name>
+<servlet-class>com.studlog.logpage</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>userlogin</servlet-name>
+<url-pattern>/main</url-pattern>
+</servlet-mapping>-->
+<!-- Sign in page  -->
+
+<servlet>
+ <servlet-name>usersignin</servlet-name>
+<servlet-class>com.signin.Studsigin</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>usersignin</servlet-name>
+ <url-pattern>/insert</url-pattern>
+ </servlet-mapping>
+</web-app>

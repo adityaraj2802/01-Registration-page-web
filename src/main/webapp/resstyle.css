@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef6fc;
+    color: #123b68;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    background-color: #0d477d;
+    padding: 20px 45px;
+    border-bottom: 3px solid #d8e8f5;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+#nav-portal {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.nav-bar a:hover {
+    color: #a9d8ff;
+}
+
+
+/* =========================
+   PAGE HEADING
+========================= */
+
+#headline {
+   text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #073b70;
+    padding-top: 35px;
+}
+
+body>p {
+    text-align: center;
+    font-size: 19px;
+    color: #235b8e;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   MAIN REGISTRATION BOX
+========================= */
+
+#main-cont {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    background-color: white;
+    border: 1px solid #a9c5d9;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   REGISTER HEADING
+========================= */
+
+.regis {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #073b70;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-container {
+    width: 100%;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 35px;
+    row-gap: 8px;
+}
+
+
+/* Labels */
+
+form label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #123b68;
+    margin-top: 5px;
+}
+
+
+/* Inputs */
+
+form input:not([type="checkbox"]),
+form select {
+    width: 100%;
+    height: 42px;
+    padding: 10px 14px;
+    border: 1px solid #b8ccdc;
+    border-radius: 5px;
+    background-color: white;
+    color: #345;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+
+/* Focus effect */
+
+form input:not([type="checkbox"]):focus,
+form select:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 4px rgba(25, 118, 210, 0.25);
+}
+
+
+/* Placeholder */
+
+form input::placeholder {
+    color: #8a9bab;
+}
+
+
+/* =========================
+   ADDRESS
+========================= */
+
+#s-addr {
+    grid-column: 1 / 3;
+}
+
+
+/* =========================
+   CHECKBOX
+========================= */
+
+form input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#check {
+    font-size: 14px;
+    color: #345;
+    margin-top: 10px;
+}
+
+#check a {
+    color: #1769aa;
+    font-weight: bold;
+}
+
+
+/* =========================
+   REGISTER BUTTON
+========================= */
+
+#res-button {
+    grid-column: 1 / 3;
+
+    width: 100%;
+    height: 44px;
+
+    background-color: #087bea;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+    margin-top: 10px;
+
+    transition: 0.3s;
+}
+
+#res-button:hover {
+    background-color: #0568c9;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #0d477d;
+    color: white;
+    padding: 35px 45px 25px;
+}
+
+.dev-ifno {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+}
+
+
+/* Footer headings */
+
+#about,
+.mylinks,
+#quick {
+    color: rgb(119, 201, 72);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Developer information */
+
+#myinfo {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.7;
+    margin-top: 15px;
+    color: #dcecff;
+}
+
+
+/* =========================
+   FOOTER LINKS
+========================= */
+
+.mylinks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mylinks a {
+    color: #dcecff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.mylinks a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#insta {
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
+    color: #dcecff;
+}
+
+
+/* =========================
+   QUICK LINKS
+========================= */
+
+#quick ul {
+    list-style: none;
+    margin-top: 12px;
+}
+
+#quick li {
+    margin-bottom: 9px;
+}
+
+#quick a {
+    color: #dcecff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+#quick a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 18px 20px;
+    }
+
+    .nav-bar {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    #nav-portal {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #headline {
+        font-size: 29px;
+    }
+
+    #main-cont {
+        width: 92%;
+        padding: 20px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    #s-addr,
+    #res-button {
+        grid-column: 1;
+    }
+
+    .dev-ifno {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .nav-bar a {
+        font-size: 14px;
+    }
+
+    #headline {
+        font-size: 25px;
+    }
+
+    body>p {
+        font-size: 16px;
+    }
+
+    .regis {
+        font-size: 25px;
+    }
+
+    #main-cont {
+        width: 95%;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+}

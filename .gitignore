@@ -1,0 +1,6 @@
+.env
+.settings/
+.classpath/
+.project/
+build/
+

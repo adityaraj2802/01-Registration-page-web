@@ -1,0 +1,99 @@
+<!-- this page for student registration page -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+<link rel="stylesheet" href="resstyle.css">
+    
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+            <span id="nav-portal">Student Portal</span>
+            <a href="Create.html">Home</a>
+            <a href="regis.html">Register</a>
+            <a href="index.html">Login</a>
+            <a href="#about">About</a>
+        </div>
+    </header>
+    <div id="headline">Student Registration
+    </div>
+    <p> Fill in Your Details For Exam Registration </p>
+    <main id="main-cont">
+        <div class="regis">Register Here</div>
+        <div class="form-container">
+            <form action="Registration" method="post">
+                <label for="name">Full Name*</label>
+                <input type="text" name="sname" placeholder="Enter your Full name" required>
+                <label for="f-name">Father's Name* </label>
+                <input type="text" name="fname" placeholder="Enter your Father's Name">
+                <label for="m-name">Mother's Name*</label>
+                <input type="text" name="mname" placeholder="Enter your Mother's Name">
+                <label for="s-mail">Email Address*</label>
+                <input type="email" name="email" id="s-mail" placeholder="Enter your email ">
+                <label for="phone">Phone Number*</label>
+                <input type="number" name="pnum" id="s-number" placeholder="Enter your phone number">
+                <label for="s-dob">Date of Birth*</label>
+                <input type="date" name="dob" id="s-dob" placeholder="Enter your DoB">
+                <label for="s-cor">Course*</label>
+                <select name="course" id="s-cor">
+                    <option > Choose your Course </option>
+                    <option value="bca">BCA</option>
+                    <option value="bba">BBA</option>
+                    <option value="bvoc">B-Voc</option>
+                </select>
+                <label for="s-sem">Semester*</label>
+                <select name="sem" id="s-sem" >
+                    <option >Choose your Semester</option>
+                    <option value="1">I</option>
+                    <option value="2">II</option>
+                    <option value="4">IV</option>
+                    <option value="6">VI</option>
+                </select>
+                <label for="s-roll">University Roll No*</label>
+                <input type="number" name="rollno" id="s-roll" required placeholder="Enter your University roll no.">
+                <label for="s-addr"> Address* </label>
+                <input type="text" name="addr" id="s-addr">
+                <input type="checkbox" name="check" required><span id="check">I agree to <a href="#">Terms and
+                        Conditions</a></span>
+                <button id="res-button">Register</button>
+
+            </form>
+        </div>
+
+    </main>
+    <hr>
+    <footer>
+        
+        <div class="dev-ifno">
+            
+            <div id="about" >About developer
+                <p id="myinfo">Hi, I'am Aditya Raj, a Passionate web Developer and BCA Student. I love building web
+                    Application and exploring new technologies . This project is created by me to practise and improving
+                    my skills in Java Full Stack Development..Thankyou </p>
+            </div>
+            <div class="mylinks">
+                Connect With Me 
+                <span id="insta">Follow me On Instagram</span>
+                <a href="https://www.instagram.com/__adityaraj_91619?stkn=N2J5MzlpNXZrb2U4" target="_blank">Aditya Raj</a>
+                <a href="https://www.facebook.com/profile.php?id=100017299591479" target="_blank">Facebook</a>
+                <a href="#">Github</a>
+                <a href="adityaraj200528@gmail.com">Send me an Email</a>
+            </div>
+            <div id="quick">Quick Links
+                <ul>
+                    <li><a href="/nav-bar">Home</a></li>
+                    <li><a href="/nav-bar">Login</a></li>
+                    <li><a href="/nav-bar">Register</a></li>
+                    <li><a href="/nav-bar">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
